@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.11.0/dist/sweetalert2.min.css
+" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css_files/all.min.css">
+    <link rel="stylesheet" href="../css_files/bootstrap.min.css">
+    <link rel="stylesheet" href="../css_files/style.css">
+</head>
+<body>
+    <div class="main-title my-5 d-flex justify-content-center">
+        <h1 class="text-center">Bookmarker</h1>
+    </div>
+
+
+    <div class="container  form-book py-4 ">
+        <div class="d-flex justify-content-center head">
+            <i class="fa-solid fa-bookmark "></i>
+        <h2 class="m-0"> Bookmark your favorite sites </h2>
+        <i class="fa-solid fa-bookmark"></i>
+        </div>
+        <div class="container pt-5 label-edit">
+            <div class="w-100">
+                <label for="nameBook" class="form-label"><i class="fa-solid fa-book px-1"></i> Site Name</label>
+                <input oninput="validation(this);" type="text" class="form-control " id="nameBook"  required placeholder="BookMark Name">
+            </div>
+                
+            <div class="w-100 my-4">
+                <label for="UrlBook" class="form-label"><i class="fa-solid fa-link px-1"></i> Site URL</label>
+                <input oninput="validation(this);" type="url" class="form-control " id="UrlBook"  required placeholder="Website URL">
+                </div>
+            <div class="w-100 my-4">
+                <label for="searchBook" class="form-label"><i class="fa-solid fa-magnifying-glass px-1"></i>Search</label>
+                <input oninput="search();" type="url" class="form-control " id="searchBook"  required placeholder="Book Name">
+                </div>
+                <div class="text-center">
+                    <button onclick="addBook();" class=" border-0 text-white rounded-2 " id="submitBtn">Submit</button>
+                </div>
+                
+        </div>
+       
+
+    </div>
+   <table class=" mt-4 bg-white text-center container ">
+    <thead >
+        <tr >
+            <th class="py-2" >Index</th>
+            <th>Website Name</th>
+            <th>Visit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody id="My-rows">
+        
+        
+    </tbody>
+   </table>
+
+
+
+   <script src="
+   https://cdn.jsdelivr.net/npm/sweetalert2@11.11.0/dist/sweetalert2.all.min.js
+   "></script>
+    <script src="../js_files/bootstrap.bundle.min.js"></script>
+    <script src="../js_files/index.js"></script>
+</body>
+</html>

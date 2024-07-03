@@ -1,0 +1,118 @@
+body{
+    background-color: #F7ECDE;
+}
+.main-title h1{
+    font-family: "Pacifico", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 50px;
+    position: relative;
+}
+.main-title h1::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 35%;
+    background-color: #FEC260;
+    z-index: -1;
+    bottom: 0;
+    transition: height 0.5s;
+   
+}
+.main-title h1:hover::after{
+    height:65%;
+}
+.form-book .head h2{
+    font-family: "Righteous", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+}
+.form-book .head i{
+   
+    margin: 3px 10px;
+    
+}
+.form-book {
+   
+    border-top: 2px dotted black;
+    border-bottom: 2px dotted black;
+    
+    
+    
+}
+.form-book .head{
+    background-image: linear-gradient(to right,rgb(228, 62, 59), #3ca55c);
+    background-clip: padding-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+}
+.label-edit label{
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 600;
+}
+
+.form-control:focus {
+    
+    background-color: var(--bs-body-bg);
+    border-color: #d99c39;
+   
+    box-shadow: 0 0 0 0.25rem #fec26055;
+}
+.form-book button{
+    background-color: #BB4120;
+    padding: 8px 52px;
+
+
+}
+thead th{
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 600;
+    margin: 0;
+    padding: 0 30px;
+}
+ tr {
+    
+    border:1px solid #dee2e6;
+}
+.btn1{
+    background-color: #9eb23b;
+    color: white;
+    padding: 6px 25px;
+    border: 0;
+    border-radius: 6px;
+}
+.btn1:hover{
+    background-color: #8a9e23;
+    
+}
+
+.btn2{
+    background-color: #eb1d36;
+    color: white;
+    padding: 6px 25px;
+    border: 0;
+    border-radius: 6px;
+}
+.btn2:hover{
+    background-color: #d30820;
+   
+}
+@media all and (max-width:750px){
+    .form-book .head h2{
+       
+        font-size: 19px;
+    }
+    .btn1{
+       
+        padding: 4px 18px;
+        font-size:12px ;
+    }
+    .btn2{
+       
+        padding: 4px 18px;
+        font-size:12px ;
+    }
+}
